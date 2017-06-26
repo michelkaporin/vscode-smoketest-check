@@ -6,7 +6,7 @@ export function activate(context: vscode.ExtensionContext) {
     let disposable = vscode.commands.registerCommand('vscode.smoketest.check', () => {
         const statusBarItem = vscode.window.createStatusBarItem();
         statusBarItem.text = 'VS Code Smoke Test Check';
-        statusBarItem.tooltip = 'Verified';
+        statusBarItem.tooltip = 'smoke test';
         statusBarItem.show();
     });
 
